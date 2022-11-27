@@ -1,0 +1,626 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+html{ 
+    font-size: 62.5%;
+}
+
+
+
+@media only screen and (min-width: 1159px) and (max-width: 1500px) {
+    .nav-general{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+
+}
+
+
+@media only screen and (min-width: 682px) and (max-width: 1159px) {
+    
+
+    .nav-general{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;   
+        padding-top: 100px;
+        margin-top: 50px;
+
+    }
+    .nav-avatar{
+        text-align: center;
+        
+
+    }
+    
+    nav .perfil-text{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        
+   }
+   .nav-a{
+    margin: 20px;
+   }
+
+   .home-main{
+    margin: 50px;
+   }
+
+}
+
+@media only screen and (min-width: 682px) and (max-width: 950px) {
+    .nav-general{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;   
+        padding-top: 100px;
+        
+
+    }
+    .nav-avatar{
+        text-align: center;
+        
+
+    }
+    
+  
+    nav .perfil-text{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+
+        
+   }
+
+}
+@media only screen and (min-width: 250px) and (max-width: 682px) {
+
+    .nav-general{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;   
+        padding-top: 100px;
+
+    }
+    .nav-avatar{    
+        text-align: center;
+        padding-top: 100px;
+
+    }
+    
+    nav .perfil-text{
+        display:none;
+        flex-direction: row;  
+   }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+
+    .nav-general{
+        display: none;
+
+    }
+
+}
+    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background-image: url(/assets/img/d3ac555effe094dd590384293267349f.png);*/
+    background-size: auto;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background: linear-gradient(-45deg, rgb(97, 94, 94), rgb(28, 102, 107) , rgb(7, 7, 7) );
+    font-family: 'Russo One', sans-serif; 
+}
+
+.video-fondo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity:60%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+a{
+
+    display: inline;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-contenedor-iconos{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    background-color: rgb(29, 29, 29);
+}
+
+
+header .header-contenedor-iconos .iconos{
+    width: 280px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+
+header .iconos span{
+    color: white;
+    font-size: 20px;
+
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px; 
+}
+
+nav .nav-contenedor-logo{
+    margin: 50px;
+}
+
+nav .nav-contenedor-logo img{
+    width: 150px;
+    margin-top: 0px; 
+}
+
+nav .perfil-link{
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+nav .nav-a{ 
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: white; 
+    height: 100vh;
+}
+
+.home-main-section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+
+.home-main-text{
+    margin-top:150px;
+}
+
+.home-main-text h1 {
+    font-size: 50px;
+    color: #fff;
+    overflow: hidden;
+    border-right: 5px solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 15px; 
+    animation: 
+      typing 3.5s steps(30, end),blink-caret .5s step-end infinite;
+}
+  
+  
+@keyframes typing {
+    from { width: 0px }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+
+
+.wrapper{
+    display: inline-flex;
+    
+}
+
+.wrapper .text-static{
+    color: rgb(247, 226, 226);
+    font-size: 25px; 
+    margin-top:30px;
+    
+}
+.wrapper .dinamico-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow:hidden;
+}
+
+.dinamico-text li{
+    color: rgb(218, 218, 218);
+    list-style: none;
+    font-size: 25px;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+
+.dinamico-text li span{
+    position:relative;
+
+}
+.dinamico-text li span::after{
+    font-size: 45px;
+    letter-spacing: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top:150px;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+}
+
+
+.home-main-button{
+    width: 110px;
+    height: 50px;
+    background-color:rgb(29, 29, 29);
+    display: grid;
+    align-items: center;
+    opacity: 80%;
+}
+
+.home-main-button a {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(11, 161, 161);
+}
+
+/*seccion parrafo*/
+
+.main-section-parrafo{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    color: white; 
+    background-color:rgb(47, 49, 48);
+    height:100vh;
+}
+
+.parrafo-text-general{
+    grid-column: 2;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top:150px
+}
+
+.foto-section-parrafo{
+    display: flex;
+    position: relative;
+      
+}
+
+.img-avatar{
+    width: 75%;
+    border-radius: 3%;
+    
+    
+}
+
+.parrafos{
+    width: 100%;
+    text-align: justify;
+    
+   
+
+}
+
+.parrafo-text-1 {
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    margin: 0 0 25px 0 ;
+    
+}
+
+.parrafo-text-2{
+    font-size: 15px;
+    margin-bottom: 25px;
+    
+  
+}
+.parrafo-text-3{
+    font-size: 15px;
+
+}
+
+
+.personal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color:black;
+    
+}
+
+.img-manejo{
+    width: 60px;
+    margin-right: 15px;
+
+}
+
+.section-portafolio{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: rgb(211, 22, 22); 
+    background-color:rgb(170, 170, 170);
+    height:100vh;
+    padding-top:150px;
+}
+
+.contenedor-general-portafolio{
+    grid-column: 2;
+    justify-items: center;
+}
+
+.contenedor-img-portafolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: red;
+}
+
+.div-portafolio{
+    padding: 10px;
+}
+
+.img-portafolio{
+    width:100%;
+}
+
+footer{
+    
+}
+
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+/*}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+header .header-contenedor-iconos{
+    width: 100%;
+    height: 300%;
+    display: grid;
+    background-color: rgb(66, 66, 66);
+
+}
+
+
+header .header-contenedor-iconos .iconos{
+    width: 280px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .iconos span{
+    color: white;
+    font-size: 20px;
+}
+
+
+li, a, button{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+}
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;   
+}
+
+nav .nav-contenedor-logo{
+    margin-left: 50px;
+}
+
+nav .nav-contenedor-logo img{
+    width: 225px;
+    margin-top: 0px;  
+}
+
+nav .perfil-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .perfil-link a{
+    color: white;
+    border-bottom: 1px solid;
+    font-size: 20px;
+     
+}
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+ 
+}
+
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home-main-text{
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+    font-weight: 700px;
+    letter-spacing: 15px;
+    color: white;
+    text-align: center;
+     
+
+}
+
+
+/*.home-main-button{
+    width: 110px;
+    height: 50px;
+    background-color:rgb(29, 29, 29);
+    display: grid;
+    align-items: center;
+    opacity: 80%;
+}
+
+.home-main-button a {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(11, 161, 161);
+    font-family: 'Russo One', sans-serif;
+
+}
+
+main css

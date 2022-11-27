@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Open+Sans:ital,wght@0,300;1,400;1,700&family=Russo+One&display=swap');
+
+
+/* fuentes para usar 
+    font-family: 'Caesar Dressing', cursive; Nordica
+    font-family: 'Open Sans', sans-serif; normal
+    font-family: 'Russo One', sans-serif; gruesa */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  
+} 
